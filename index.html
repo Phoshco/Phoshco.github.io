@@ -25,6 +25,17 @@
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
+		.gif-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .gif-container img {
+            width: 40%;  /* Scales with the container */
+            max-width: 150px; /* Prevents it from being too large */
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover;
+        }
         h1 {
             font-size: 24px;
             margin-bottom: 10px;
@@ -45,6 +56,9 @@
 </head>
 <body>
     <div class="container">
+		<div class="gif-container">
+            <img src="burnice_gif.gif" alt="Loading GIF">
+        </div>
         <h1>Looking for the model viewer?</h1>
         <p>You will be redirected shortly. ^^</p>
         <p>If not, <a href="https://phoshco.github.io/model-viewer/">click here</a>.</p>
